@@ -1,3 +1,8 @@
+body {
+  background-color: #ee5522;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290' height='290' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23ca481d' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 #homePhoto {
   width: 50%;
   height: 80%;
@@ -60,6 +65,7 @@ h1 {
   align-self: top;
   padding-top: 8%;
   color: #1885b1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
@@ -206,9 +212,16 @@ div > h3 {
   color: white;
 }
 
+#projectHeadText {
+  padding-bottom: 5%;
+}
+
 .homeGrid4 {
   height: 40vw;
   background-color: lightgrey;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
 }
 
 .projectsGrid {
@@ -221,6 +234,7 @@ div > h3 {
 #carWebsiteIMG {
   max-width: 100%;
   border-radius: 25px;
+  margin-top: 3%;
 }
 
 .projectIMG1 {
@@ -233,7 +247,7 @@ div > h3 {
 
 .projectIMG3 {
   grid-column: 3/4;
-  height: 13vw;
+  height: 10.5vw;
 }
 
 .homeGrid3 {
@@ -241,6 +255,8 @@ div > h3 {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 300px 300px 300px;
   text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .certs {
@@ -252,6 +268,8 @@ div > h3 {
 .homeGrid2 {
   height: 60vw;
   background-color: lightgray;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 @media only screen and (max-width: 992px) {

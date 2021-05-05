@@ -71,7 +71,8 @@
             
             West-MEC	Phoenix, AZ 	Expected Grad Date: May 2021
             Coding Program 	GPA: 2
-            This two-year interactive program prepares students for a career as a software developer. The program teaches students how to design and develop software, build apps for phones, tablets, websites, and write and test computer code. 
+            This two-year interactive program prepares students for a career as a software developer. 
+            The program teaches students how to design and develop software, build apps for phones, tablets, websites, and write and test computer code. 
             
             Shadow Ridge High School	 Shadow Ridge High School, AZ	Expected Grad Date: May 2021
             Relevant Coursework:  Medical Foundations 1, Computer Animation 1&2, Spanish 1&2, Computer Science, Honors Geometry, Honors Algebra, College Algebra, English 101 &102
@@ -90,7 +91,7 @@
     </div>
 
     <div class="homeGrid4">
-        <h1 class="text-fluid" id="projectHeadText">Projects gallery</h1>
+        <h1 class="text-fluid" id="projectHeadText">Project Gallery</h1>
         <div class="projectsGrid">
             <a href="https://jblack262.github.io/Car-Website/"> <img src="images/carSite.PNG" class="projectIMG1" id="carWebsiteIMG"></a>
             <a href= "https://lgrave264.github.io/groupTOY/"> <img src="images/mouseTrap.PNG" class="projectIMG2" id="carWebsiteIMG"></a>
@@ -124,13 +125,14 @@
     </div>
 
 <script>
-
+    //Sets up the website so it doesnt all stack
     $(document).ready(function(){
         $('.homeGrid2').hide();
         $('.homeGrid3').hide();
         $('.homeGrid4').hide();
         $('.homeGrid5').hide();
     });
+    //Controls for switching threw the three main screens on home page
         $('#resBtn').click(function(){
             $('.homeGrid').fadeOut(1000);
             $('.homeGrid2').delay(1000).fadeIn(1000);
@@ -143,7 +145,7 @@
             $('.homeGrid').fadeOut(1000);
             $('.homeGrid4').delay(1000).fadeIn(1000);
     });
-
+    //Individual nav buttons for changing pages
     $('.navBtn2').click(function(){
         $('.homeGrid').fadeOut(1000);
         $('.homeGrid2').fadeOut(1000);
