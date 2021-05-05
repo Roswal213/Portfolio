@@ -1,6 +1,6 @@
 #homePhoto{
-    width: 45%;
-    height: 90%;
+    width: 50%;
+    height: 80%;
     border-radius:8px;
     margin-left:20%;
     box-shadow: 4px 8px;
@@ -115,12 +115,15 @@ nav a :hover{
     grid-column:2/3;
     margin-top:2%;
     display:grid;
-    justify-items:flex-end;
+    justify-content:flex-end;
 }
 div div p{
     color: black;
     font-size: medium;
     margin-left:4%;
+}
+div div a{
+    text-align: right;
 }
 #homeText1{
     margin-bottom:0;
@@ -191,13 +194,12 @@ div > h3{
 .projectsGrid{
     display:grid;
     grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 23% 23% 23%;
     justify-content:space-evenly;
-    
 }
 #carWebsiteIMG{
     max-width:100%;
-    padding-top: 10%;
-    padding-bottom:10%;
+    border-radius:25px;
 }
 .projectIMG1{
     grid-column:1/2;
@@ -207,6 +209,23 @@ div > h3{
 }
 .projectIMG3{
     grid-column:3/4;
+    height:13vw;
+}
+.homeGrid3{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:300px 300px 300px;
+    text-align:center;
+}
+.certs{
+    grid-row:2/3;
+    grid-column:2/3;
+    justify-self:center;
+}
+//Resume Page
+.homeGrid2{
+    height:60vw;
+    background-color:lightgray;
 }
 
 @media only screen and (max-width: 992px) {
@@ -228,9 +247,4 @@ div > h3{
     .navIcon5{
         width:16%;
     }
-}
-//Resume Page
-.homeGrid2{
-    height:42vw;
-    background-color:lightgray;
 }

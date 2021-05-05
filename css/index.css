@@ -1,27 +1,20 @@
 #homePhoto {
-  width: 45%;
-  height: 90%;
+  width: 50%;
+  height: 80%;
   border-radius: 8px;
   margin-left: 20%;
-  -webkit-box-shadow: 4px 8px;
-          box-shadow: 4px 8px;
+  box-shadow: 4px 8px;
   color: orange;
 }
 
 #homePhotoHolder {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
 .homeGrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   justify-items: center;
   background-color: lightgray;
   padding-bottom: 18%;
@@ -31,77 +24,49 @@
 }
 
 .startBtn {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1/3;
   margin-top: 10%;
   width: 18%;
   height: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   border-radius: 8px;
   background-color: #1885b1;
   color: orange;
-  -webkit-box-shadow: 2px 4px;
-          box-shadow: 2px 4px;
-  -webkit-text-decoration: underline orange;
-          text-decoration: underline orange;
+  box-shadow: 2px 4px;
+  text-decoration: none;
 }
 
 #resBtn {
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
+  justify-self: left;
   grid-row: 3/4;
   margin-left: 10%;
 }
 
 #certBtn {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
+  justify-self: center;
   grid-row: 3/4;
 }
 
 #socialBtn {
-  -ms-grid-column-align: right;
-      justify-self: right;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
+  justify-self: right;
   grid-row: 3/4;
   margin-right: 10%;
 }
 
 h1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
-  -ms-grid-column-align: right;
-      justify-self: right;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
+  justify-self: right;
+  align-self: top;
   padding-top: 8%;
   color: #1885b1;
 }
 
 h2 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
   grid-row: 1/2;
-  -ms-grid-column-align: right;
-      justify-self: right;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: right;
+  align-self: center;
   color: orange;
 }
 
@@ -133,10 +98,8 @@ nav a :hover {
 }
 
 .footer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   position: absolute;
   left: 0;
   bottom: 100;
@@ -168,19 +131,20 @@ nav a :hover {
 }
 
 .footerBox2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
   margin-top: 2%;
-  display: -ms-grid;
   display: grid;
-  justify-items: flex-end;
+  justify-content: flex-end;
 }
 
 div div p {
   color: black;
   font-size: medium;
   margin-left: 4%;
+}
+
+div div a {
+  text-align: right;
 }
 
 #homeText1 {
@@ -242,36 +206,52 @@ div > h3 {
   color: white;
 }
 
+.homeGrid4 {
+  height: 40vw;
+  background-color: lightgrey;
+}
+
 .projectsGrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25%;
-      grid-template-columns: 25% 25% 25%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 23% 23% 23%;
+  justify-content: space-evenly;
 }
 
 #carWebsiteIMG {
   max-width: 100%;
+  border-radius: 25px;
 }
 
 .projectIMG1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
 
 .projectIMG2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
 .projectIMG3 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
+  height: 13vw;
+}
+
+.homeGrid3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 300px 300px 300px;
+  text-align: center;
+}
+
+.certs {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.homeGrid2 {
+  height: 60vw;
+  background-color: lightgray;
 }
 
 @media only screen and (max-width: 992px) {
